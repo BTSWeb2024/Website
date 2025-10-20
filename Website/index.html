@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behind the Sun</title>
+  <style>
+    /* Global style */
+    body {
+      text-align: center;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(to bottom right, #111, #333);
+      color: white;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Center box */
+    .container {
+      width: 90%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 60px);
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+      font-size: clamp(1rem, 2.5vw, 25px);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* Button styles */
+    .button {
+      display: inline-block;
+      padding: 15px 35px;
+      margin: 10px;
+      background: linear-gradient(145deg, #007BFF, #0056b3);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: clamp(1rem, 2.5vw, 24px);
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+    }
+
+    /* Accent orange button (for Links) */
+    .links-button {
+      background: linear-gradient(145deg, #FF4500, #e63e00);
+      box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+    }
+
+    .links-button:hover {
+      box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6);
+    }
+
+    /* Make layout mobile-friendly */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 25px 15px;
+      }
+
+      .button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Behind the Sun</h1>
+
+    <p>
+      Hello! 🎶<br><br>
+      We are <b>Behind The Sun</b>, a young, aspiring rock band. <br><br>
+      We play live gigs, perform original songs, and have our own <b>YouTube channel</b> — don’t forget to subscribe!<br><br>
+      You can also find us on <b>TikTok</b>, <b>WhatsApp</b>, and <b>Facebook</b>.<br><br>
+      Want to connect with us? Click below to explore our links or contact us directly.
+    </p>
+
+    <!-- Navigation Buttons -->
+    <a href="Links.html" class="button links-button">Our Links</a>
+  </div>
+</body>
+</html>

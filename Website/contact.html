@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Behind the Sun</title>
+  <style>
+    /* Page background & layout */
+    body {
+      text-align: center;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(to bottom right, #111, #333);
+      color: white;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Main content box */
+    .container {
+      width: 90%;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 50px);
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+      font-size: clamp(1rem, 2.5vw, 25px);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* Contact links */
+    a {
+      color: #1E90FF;
+      text-decoration: none;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Back button */
+    .button {
+      display: inline-block;
+      padding: 15px 35px;
+      background: linear-gradient(145deg, #FF4500, #e63e00);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: clamp(1rem, 2.5vw, 22px);
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6);
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 15px;
+      }
+
+      .button {
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>
+      You can contact us via <b>phone</b>, <b>Gmail</b>, or <b>Outlook</b>! <br><br>
+
+      📧 Gmail: <a href="mailto:behindthesun781@gmail.com">behindthesun781@gmail.com</a><br>
+      📮 Outlook: <a href="mailto:behindthesunofficial@outlook.com">behindthesunofficial@outlook.com</a><br>
+      📱 Phone: <a href="tel:+447787826669">07787 826669</a>
+    </p>
+
+    <a href="Links.html" class="button">⬅ Back to Links</a>
+  </div>
+</body>
+</html>
